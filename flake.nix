@@ -35,7 +35,7 @@
       nixvm = nixpkgs.lib.nixosSystem {
         system = "arm64-linux";
         modules = [
-          ./linux-configuration.nix
+          ./nixos/linux-configuration.nix
           ./nixvm/configuration.nix
           ./nixvm/hardware-configuration.nix
           home-manager.nixosModules.home-manager
@@ -76,6 +76,7 @@
         pkgs = nixpkgs.legacyPackages.arm64-linux;
         modules = [
           ./home.nix
+          ./nixos/desktop-home.nix
           ./nixvm/home.nix
           {
             home.username = "bcr";
