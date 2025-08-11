@@ -35,7 +35,7 @@
       nixvm = nixpkgs.lib.nixosSystem {
         system = "arm64-linux";
         modules = [
-          ./linux-configurat.nix
+          ./linux-configuration.nix
           ./nixvm/configuration.nix
           ./nixvm/hardware-configuration.nix
           home-manager.nixosModules.home-manager
