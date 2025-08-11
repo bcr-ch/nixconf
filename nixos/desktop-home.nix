@@ -9,6 +9,7 @@
   home.packages = with pkgs; [
     neofetch
     htop
+    gh
   ];
 
   programs.zsh = {
