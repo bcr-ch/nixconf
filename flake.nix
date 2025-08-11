@@ -28,7 +28,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, nix-darwin, nix-homebrew, homebrew-core, homebrew-cask, homebrew-bundle, ... }: {
+  outputs = { self, nixpkgs, home-manager, nix-darwin, nix-homebrew, homebrew-core, homebrew-cask, ... }: {
 
     # NixOS configurations for personal and work systems
     nixosConfigurations = {
@@ -41,6 +41,7 @@
           home-manager.nixosModules.home-manager
         ];
       };
+    };
 
     # Darwin (macOS) configurations 
     darwinConfigurations = {
@@ -49,7 +50,7 @@
         pkgs = import nixpkgs {
           system = "aarch64-darwin";
           config.allowUnfree = true;
-        }
+        };
         modules = [
           ./m4kode/configuration.nix
           { users.users."bcr".home = "/Users/bcr"; }
