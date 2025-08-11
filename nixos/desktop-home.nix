@@ -23,6 +23,8 @@
  
     shellAliases = {
       ls = "ls --color";
+      nixbuild = "sudo nixos-rebuild switch --flake ~/nix";
+      nixclean = "sudo nix-env --delete-generations old -p /nix/var/nix/profiles/system && sudo nix-collect-garbage -d && flake-build";
       ll = "ls -lahrts";
     };
 
