@@ -10,6 +10,7 @@
     neofetch
     htop
     gh
+    git
   ];
 
   programs.zsh = {

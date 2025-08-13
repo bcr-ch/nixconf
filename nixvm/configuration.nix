@@ -14,6 +14,9 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  # Use latest kernel.
+  boot.kernelPackages = pkgs.linuxPackages_latest;
+
   networking.hostName = "nixvm"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -32,11 +35,6 @@
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
-
-
-  #Spice VDAGENT
-  services.spice-vdagentd.enable = true;
-
 
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
@@ -69,6 +67,7 @@
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
+  services.spice-vdagentd.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.bcr = {
@@ -81,21 +80,18 @@
   };
 
   # Install firefox.
-  #programs.firefox.enable = true;
+  programs.firefox.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-
-  #Enable flake
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    vim
-    git
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
+    vim
+    spice-vdagent
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
