@@ -35,9 +35,8 @@
       nixvm = nixpkgs.lib.nixosSystem {
         system = "arm64-linux";
         modules = [
-          ./nixos/linux-configuration.nix
-          ./nixvm/configuration.nix
-          ./nixvm/hardware-configuration.nix
+          ./hosts/nixvm/configuration.nix
+          ./hosts/nixvm/hardware-configuration.nix
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
@@ -56,7 +55,7 @@
           config.allowUnfree = true;
         };
         modules = [
-          ./m4kode/configuration.nix
+          ./hosts/m4kode/configuration.nix
           { users.users."bcr".home = "/Users/bcr"; }
           home-manager.darwinModules.home-manager
           {
@@ -65,8 +64,7 @@
             home-manager.useUserPackages = true;
             home-manager.users."bcr" = {
               imports = [
-                ./home.nix
-                ./m4kode/home.nix
+                ./home/macos-home.nix
               ];
             };
           }
@@ -79,9 +77,7 @@
       nixvm = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.arm64-linux;
         modules = [
-          ./home.nix
-          ./nixos/desktop-home.nix
-          ./nixvm/home.nix
+          ./home/desktop-home.nix
           {
             home.username = "bcr";
             home.homeDirectory = "/home/bcr";

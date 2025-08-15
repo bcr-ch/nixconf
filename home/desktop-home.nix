@@ -1,7 +1,8 @@
 { pkgs, ... }: {
  
   imports = [
-    ./kitty.nix
+    ./modules/kitty.nix
+    ./modules/vscode.nix
   ];
 
   home.stateVersion = "25.11";
@@ -90,7 +91,7 @@
       DontCheckDefaultBrowser = true;
         
       ExtensionSettings = {
-        "*".installation_mode = "blocked";
+        #"*".installation_mode = "blocked";
         "uBlock@raymondhill.net" = {
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
           installation_mode = "force_installed";
