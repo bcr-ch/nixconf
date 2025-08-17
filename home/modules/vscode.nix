@@ -5,6 +5,7 @@
     profiles.default.extensions = with pkgs.vscode-extensions; [
       dracula-theme.theme-dracula
       vscodevim.vim
+      jnoortheen.nix-ide
     ];
   };
 }
