@@ -40,7 +40,7 @@
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.bcr = import ./nixos/desktop-home.nix;
+            home-manager.users.bcr = import ./home/desktop-home.nix;
           }
         ];
       };
@@ -73,17 +73,17 @@
     };
 
     # Home Manager configurations for Unix personal, Unix work, and WSL systems
-    homeConfigurations = {
-      nixvm = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.arm64-linux;
-        modules = [
-          ./home/desktop-home.nix
-          {
-            home.username = "bcr";
-            home.homeDirectory = "/home/bcr";
-          }         
-        ];
-      };
-    };
+    #homeConfigurations = {
+    #  nixvm = home-manager.lib.homeManagerConfiguration {
+    #    pkgs = nixpkgs.legacyPackages.arm64-linux;
+    #    modules = [
+    #      ./home/desktop-home.nix
+    #      {
+    #        home.username = "bcr";
+    #        home.homeDirectory = "/home/bcr";
+    #      }         
+    #    ];
+    #  };
+    #};
   };
 }
