@@ -71,7 +71,14 @@
     #defaultSearchProviderSearchURL = "https://duckduckgo.com/?q={searchTerms}";
   };
 
-
+  
+  programs.ssh = {
+    enable = true;
+    extraConfig = ''
+      Host *
+          IdentityAgent ~/.1password/agent.sock
+    '';
+  };
 
   programs.firefox = {
     enable = true;
