@@ -12,6 +12,8 @@
     htop
     gh
     git
+    #_1password-gui
+    #_1password-cli
   ];
 
   programs.zsh = {

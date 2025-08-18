@@ -37,6 +37,7 @@
         modules = [
           ./hosts/nixvm/configuration.nix
           ./hosts/nixvm/hardware-configuration.nix
+          ./hosts/nixvm/programs.nix
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
