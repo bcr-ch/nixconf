@@ -41,8 +41,12 @@
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.bcr = import ./home/desktop-home.nix;
-            home-manager.users.bcr = import ./home/security.nix;
+            home-manager.users.bcr = {
+              imports = [
+                ./home/desktop-home.nix
+                ./home/security.nix
+              ];
+            };
           }
         ];
       };
