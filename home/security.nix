@@ -3,7 +3,7 @@
   home.stateVersion = "25.11";
 
   home.packages = with pkgs; [
-    mullvad-browser
+    #mullvad-browser
     tor-browser
     nmap
   ];
