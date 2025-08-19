@@ -30,6 +30,7 @@
       "font-jetbrains-mono-nerd-font"
       "notchnook"
       "zoom"
+      "tor-browser"
     ];
   };
 
