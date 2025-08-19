@@ -38,6 +38,7 @@
           ./hosts/nixvm/configuration.nix
           ./hosts/nixvm/hardware-configuration.nix
           ./hosts/modules/programs.nix
+          ./hosts/modules/linux-configuration.nix
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
@@ -59,6 +60,7 @@
           ./hosts/nixdesk/hardware-configuration.nix
           ./hosts/modules/programs.nix
           ./hosts/modules/rdp.nix
+          ./hosts/modules/linux-configuration.nix
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
