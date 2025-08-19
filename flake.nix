@@ -58,7 +58,7 @@
           ./hosts/nixdesk/configuration.nix
           ./hosts/nixdesk/hardware-configuration.nix
           ./hosts/modules/programs.nix
-          ./hosts/modules/rustdesk.nix
+          ./hosts/modules/rdp.nix
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
