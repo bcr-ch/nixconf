@@ -46,6 +46,21 @@
         ];
       };
     };
+    nixosConfigurations = {
+      nixdesk = nixpkgs.lib.nixosSystem {
+        system = "amd64-linux";
+        modules = [
+          ./hosts/nixdesk/configuration.nix
+          ./hosts/nixdesk/hardware-configuration.nix
+          ./hosts/modules/programs.nix
+          home-manager.nixosModules.home-manager {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.bcr = import ./home/desktop-home.nix;
+          }
+        ];
+      };
+    };
 
     # Darwin (macOS) configurations 
     darwinConfigurations = {
