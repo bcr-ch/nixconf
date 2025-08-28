@@ -26,7 +26,7 @@
       "rectangle"
       "citrix-workspace"
       "microsoft-office"
-      "rustdesk"
+      #"rustdesk"
       "font-jetbrains-mono-nerd-font"
       "notchnook"
       "zoom"
