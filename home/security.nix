@@ -4,7 +4,7 @@
 
   home.packages = with pkgs; [
     #mullvad-browser
-    #tor-browser
+    tor-browser
     nmap
   ];
 }
