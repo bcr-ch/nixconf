@@ -31,6 +31,7 @@
       "notchnook"
       "zoom"
       "tor-browser"
+      "bartender"
     ];
   };
 
