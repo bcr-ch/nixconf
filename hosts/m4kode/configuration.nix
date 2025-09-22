@@ -36,6 +36,7 @@
       "tor-browser"
       "bartender"
       "podman-desktop"
+      "webex"
     ];
   };
 
