@@ -32,6 +32,9 @@
       "zoom"
       "tor-browser"
       "bartender"
+      "podman"
+      "podman-compose"
+      "podman-desktop"
     ];
   };
 
