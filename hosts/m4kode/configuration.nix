@@ -10,7 +10,10 @@
     onActivation.autoUpdate = true;
     onActivation.upgrade = true;
     taps = [];
-    brews = [];
+    brews = [
+      "podman"
+      "podman-compose"
+    ];
     casks = [ 
       "1password"
       "1password-cli"
