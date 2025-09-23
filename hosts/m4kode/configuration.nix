@@ -39,6 +39,7 @@
       "podman-desktop"
       "webex"
       "claude"
+      "firefox"
     ];
   };
 
