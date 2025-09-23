@@ -13,6 +13,7 @@
     brews = [
       "podman"
       "podman-compose"
+      "node"
     ];
     casks = [ 
       "1password"
@@ -37,6 +38,7 @@
       "bartender"
       "podman-desktop"
       "webex"
+      "claude"
     ];
   };
 
