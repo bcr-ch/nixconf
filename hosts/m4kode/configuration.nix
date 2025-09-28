@@ -26,10 +26,8 @@
       "little-snitch"
       "protonvpn"
       "calibre"
-      "microsoft-auto-update"
       "rectangle"
       "citrix-workspace"
-      "microsoft-office"
       #"rustdesk"
       "font-jetbrains-mono-nerd-font"
       "notchnook"
@@ -37,7 +35,6 @@
       "tor-browser"
       "bartender"
       "podman-desktop"
-      "webex"
       "claude"
       "firefox"
     ];
