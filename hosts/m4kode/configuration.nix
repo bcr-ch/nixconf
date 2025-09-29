@@ -37,6 +37,8 @@
       "podman-desktop"
       "claude"
       "firefox"
+      "proton-mail-bridge"
+      "thunderbird"
     ];
   };
 
