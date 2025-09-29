@@ -37,7 +37,6 @@
       "podman-desktop"
       "claude"
       "firefox"
-      "protonmail-import-export"
     ];
   };
 
