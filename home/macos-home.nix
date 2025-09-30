@@ -37,6 +37,7 @@
       export EDITOR=vi
       export TERM=xterm-256color
       export LANG=en_US.UTF-8
+      export GOOGLE_CLOUD_PROJECT=735607728301
       '';
 
     oh-my-zsh = {
