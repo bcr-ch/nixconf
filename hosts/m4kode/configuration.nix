@@ -40,7 +40,6 @@
       "firefox"
       "proton-mail-bridge"
       "thunderbird"
-      "gemini"
     ];
   };
 
