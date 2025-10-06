@@ -40,6 +40,7 @@
       "firefox"
       "proton-mail-bridge"
       "thunderbird"
+      "nordvpn"
     ];
   };
 
