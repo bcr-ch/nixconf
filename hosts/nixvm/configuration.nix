@@ -81,7 +81,7 @@
 
   #Make sure we have ZSH and the appropriate shell is set
   programs.zsh.enable = true;
-  users.users.bcr.shell = pkgs.zsh;
+  #users.users.bcr.shell = pkgs.zsh;
 
   # Install firefox.
   #programs.firefox.enable = true;
