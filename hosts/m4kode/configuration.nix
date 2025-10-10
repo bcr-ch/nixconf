@@ -28,7 +28,7 @@
       "protonvpn"
       "calibre"
       "rectangle"
-      "citrix-workspace"
+      #"citrix-workspace"
       #"rustdesk"
       "font-jetbrains-mono-nerd-font"
       "notchnook"
