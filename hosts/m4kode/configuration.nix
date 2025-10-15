@@ -41,6 +41,7 @@
       "proton-mail-bridge"
       "thunderbird"
       "nordvpn"
+      "qflipper"
       "google-chrome"
     ];
   };
