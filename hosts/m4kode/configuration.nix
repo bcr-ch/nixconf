@@ -34,7 +34,6 @@
       "notchnook"
       "zoom"
       "tor-browser"
-      "bartender"
       "podman-desktop"
       "claude"
       "firefox"
