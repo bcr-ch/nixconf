@@ -75,6 +75,29 @@
       };
     };
 
+    nixosConfigurations = {
+      nixhp = nixpkgs.lib.nixosSystem {
+        system = "amd64-linux";
+        modules = [
+          ./hosts/nixhp/configuration.nix
+          ./hosts/nixhp/hardware-configuration.nix
+          ./hosts/modules/programs.nix
+          #./hosts/modules/rdp.nix
+          ./hosts/modules/linux-configuration.nix
+          home-manager.nixosModules.home-manager {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.bcr = { 
+              imports = [
+                ./home/desktop-home.nix
+                #./home/security.nix
+              ];
+            };
+          }
+        ];
+      };
+    };
+
     # Darwin (macOS) configurations 
     darwinConfigurations = {
       m4kode = nix-darwin.lib.darwinSystem {
