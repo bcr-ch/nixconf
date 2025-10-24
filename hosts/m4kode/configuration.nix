@@ -14,7 +14,6 @@
       "podman"
       "podman-compose"
       "node"
-      "gemini-cli"
     ];
     casks = [ 
       "1password"
@@ -37,11 +36,8 @@
       "podman-desktop"
       "claude"
       "firefox"
-      "proton-mail-bridge"
-      "thunderbird"
       "nordvpn"
       "qflipper"
-      "google-chrome"
     ];
   };
 
