@@ -39,6 +39,7 @@
       "qflipper"
       "slack"
       "proton-drive"
+      "ghostty"
     ];
   };
 
