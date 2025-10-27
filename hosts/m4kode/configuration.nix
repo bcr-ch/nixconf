@@ -38,6 +38,7 @@
       "firefox"
       "qflipper"
       "slack"
+      "proton-drive"
     ];
   };
 
