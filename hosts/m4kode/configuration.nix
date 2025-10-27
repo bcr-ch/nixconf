@@ -36,7 +36,6 @@
       "podman-desktop"
       "claude"
       "firefox"
-      "nordvpn"
       "qflipper"
     ];
   };
